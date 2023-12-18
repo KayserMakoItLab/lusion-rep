@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import { Canvas } from '@react-three/fiber';
 import './App.css';
+import AnimationScroll from './sessions/Animation3DSession/AnimationScroll';
+import PhysicsBox from './sessions/PhysicsBoxStarterSession/PhysicsBox';
+import { Physics } from '@react-three/rapier';
+import Alpine from "alpinejs";
+import Ripple from "@wilkr/alpine-ripple";
+import LiquidWaveEffect from './sessions/HoverWaveEffect/LiquidWaveEffect';
+import VideoContents from './sessions/VideoContentsSession/VideoContents';
+import FogFlowRoom from './sessions/TestingFogSession/FogFlowRoom';
 
 function App() {
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <FogFlowRoom />
+      <div className="App">
+        {/* <LiquidWaveEffect /> */}
+        {/* <PhysicsBox />
+        <VideoContents />
+        <AnimationScroll /> */}
+      </div>
+    </>
   );
 }
 
