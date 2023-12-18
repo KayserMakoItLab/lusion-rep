@@ -34,7 +34,7 @@ const FogFlowRoom = () => {
           />
           <FullCityScroll />
 
-          <OrbitControls />
+          {/* <OrbitControls /> */}
           {/* <Sky /> */}
         </Canvas>
       </div>

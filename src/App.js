@@ -8,13 +8,17 @@ import Ripple from "@wilkr/alpine-ripple";
 import LiquidWaveEffect from './sessions/HoverWaveEffect/LiquidWaveEffect';
 import VideoContents from './sessions/VideoContentsSession/VideoContents';
 import FogFlowRoom from './sessions/TestingFogSession/FogFlowRoom';
+import { Suspense } from 'react';
+import { Loader } from '@react-three/drei';
 
 function App() {
 
   
   return (
     <>
-      <FogFlowRoom />
+      <Suspense fallback={<Loader />}>
+        <FogFlowRoom />
+      </Suspense>
       <div className="App">
         {/* <LiquidWaveEffect /> */}
         {/* <PhysicsBox />
