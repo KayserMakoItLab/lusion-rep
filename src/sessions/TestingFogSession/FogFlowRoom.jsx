@@ -25,7 +25,6 @@ const FogFlowRoom = () => {
     <>
       <div className="container">
         <Canvas resize={{ scroll: true }}>
-          {/* <color attach={"background"} /> */}
           <ambientLight intensity={1} />
           <directionalLight
             // color={"#bf8bff"}

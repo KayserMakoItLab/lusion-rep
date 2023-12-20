@@ -17,6 +17,7 @@ function App() {
   return (
     <>
       <Suspense fallback={<Loader />}>
+        
         <FogFlowRoom />
       </Suspense>
       <div className="App">
